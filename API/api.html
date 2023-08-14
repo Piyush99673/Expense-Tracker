@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Expense Management System</title>
+</head>
+
+<body>
+    <h1>Expense Management System</h1>
+
+    <h2>GET API</h2>
+    <form id="getForm" action="/gettransaction" method="post">
+        <label for="startDate">Start Date:</label>
+        <input type="date" id="startDate" name="startDate">
+        <br>
+        <label for="endDate">End Date:</label>
+        <input type="date" id="endDate" name="endDate">
+        <br>
+        <button type="submit">Get Transactions</button>
+    </form>
+    <hr>
+
+    <h2>EDIT API</h2>
+    <form id="editForm" action="/edit" method="post">
+        <!-- Fields for original data -->
+        <label for="originalDate">Original Date:</label>
+        <input type="date" id="originalDate" name="originalDate">
+        <label for="originalDescription">Original Description:</label>
+        <input type="text" id="originalDescription" name="originalDescription">
+        <label for="originalAmount">Original Amount:</label>
+        <input type="number" step="0.01" id="originalAmount" name="originalAmount">
+        <label for="originalCurrency">Original Currency:</label>
+        <input type="text" id="originalCurrency" name="originalCurrency">
+        <br>
+
+        <!-- Fields for new data -->
+        <label for="newDate">New Date:</label>
+        <input type="date" id="newDate" name="newDate">
+        <label for="newDescription">New Description:</label>
+        <input type="text" id="newDescription" name="newDescription">
+        <label for="newAmount">New Amount:</label>
+        <input type="number" step="0.01" id="newAmount" name="newAmount">
+        <label for="newCurrency">New Currency:</label>
+        <input type="text" id="newCurrency" name="newCurrency">
+        <br>
+
+        <button type="submit">Edit Transaction</button>
+    </form>
+
+    <hr>
+
+    <h2>INSERT API</h2>
+    <form id="insertForm" action="/insert" method="post">
+        <!-- Fields for inserting new transaction data -->
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date">
+        <label for="Description">Description:</label>
+        <input type="text" id="DescriptionId" name="DescriptionId">
+        <label for="amount">Amount:</label>
+        <input type="text" id="amount" name="amount">
+        <label for="Currency">Currency:</label>
+        <input type="text" id="Currency" name="Currency">
+        <br>
+        <button type="submit">Insert Transaction</button>
+    </form>
+    <hr>
+
+    <h2>DELETE API</h2>
+    <form id="deleteForm" action="/delete" method="post">
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date">
+        <label for="Description">Description:</label>
+        <input type="text" id="DescriptionId" name="DescriptionId">
+        <label for="amount">Amount:</label>
+        <input type="string" id="amount" name="amount">
+        <label for="Currency">Currency:</label>
+        <input type="string" id="Currency" name="Currency">
+        <br>
+        <button type="submit">Delete Transaction</button>
+    </form>
+    <hr>
+
+    <script>
+        // Add JavaScript code here to handle form submissions and API requests
+        // You can use the Fetch API or any other library to make API requests
+    </script>
+</body>
+
+</html>

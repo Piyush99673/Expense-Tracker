@@ -1,0 +1,47 @@
+/* Reset some default styles for consistency */
+body, h1, form {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Set some basic styling for the body */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+  }
+  
+  /* Style the header */
+  h1 {
+    text-align: center;
+    padding: 20px;
+    background-color: #3498db;
+    color: #ffffff;
+  }
+  
+  /* Style the form container */
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  /* Style the file input */
+  input[type="file"] {
+    margin: 10px 0;
+  }
+  
+  /* Style the upload button */
+  button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #2980b9;
+  }
+  
